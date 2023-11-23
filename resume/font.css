@@ -1,0 +1,41 @@
+/* Bold */
+@font-face{
+    font-family:"Founders Grotesk";
+    src: local('Founders Grotesk'), url(./Font/test-founders-grotesk-bold.woff2) format("woff2");
+    font-weight:700;
+    font-style: normal;
+}
+
+/* light */
+@font-face{
+    font-family:"Founders Grotesk";
+    src: local('Founders Grotesk'), url(./Font/test-founders-grotesk-light.woff2) format("woff2");
+    font-weight:200;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face{
+    font-family:"Founders Grotesk";
+    src: local('Founders Grotesk'), url(./Font/test-founders-grotesk-medium.woff2) format("woff2");
+    font-weight:500;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face{
+    font-family:"Founders Grotesk";
+    src: local('Founders Grotesk'), url(./Font/test-founders-grotesk-regular.woff2) format("woff2");
+    font-weight:400;
+    font-style: normal;
+}
+
+/* Semi-bold */
+@font-face{
+    font-family:"Founders Grotesk";
+    src: local('Founders Grotesk'), url(./Font/test-founders-grotesk-semibold.woff2) format("woff2");
+    font-weight:600;
+    font-style: normal;
+}
+
+

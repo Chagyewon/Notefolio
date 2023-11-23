@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Neue Montreal", "Noto Sans KR", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 30px;
+  right: 30px;
+  top: 16px;
+}
+.header .menu {
+  font-size: 22px;
+  display: flex;
+  gap: 30px;
+}
+
+.main_title {
+  padding-left: 30px;
+  padding-top: 122px;
+  padding-bottom: 128px;
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 4.2vw;
+}
+.main_title .t_space {
+  display: inline-block;
+  width: 10vw;
+}
+
+.center_menu {
+  padding-left: 30px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.center_menu .center_menus {
+  font-size: 24px;
+  padding-right: 29px;
+  display: flex;
+  gap: 100px;
+}
+
+.img_text {
+  padding-left: 30px;
+  padding-top: 32px;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+  background-image: url(./image/back_img.jpg);
+  height: 1000px;
+  background-size: cover;
+}
+
+.down_btn {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -40px;
+}
+.down_btn .img {
+  width: 80px;
+}/*# sourceMappingURL=231026_연습.css.map */

@@ -1,0 +1,8 @@
+.menu_container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 20px;
+  padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}/*# sourceMappingURL=tt2.css.map */

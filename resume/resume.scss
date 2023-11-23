@@ -1,0 +1,456 @@
+body{
+    font-family:"Founders Grotesk", "Pretendard", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #2a2a2a;
+    background-color: #f5f5f5;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border:0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+img, picture, svg{
+    display: inline-block;
+    -webkit-user-drag: none;
+}
+
+ul,
+li{
+    list-style: none;
+}
+
+.header{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    background-color : #F5F5F5;;
+    // backdrop-filter: blur(3px);
+    z-index: 999;
+    border-bottom: 1px solid #ddd;
+    
+    .inner {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 17px;
+    }
+
+    .progress-container {
+        bottom: -2px;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        .progress-bar {
+            background-color: #2a2a2a;
+            height: 100%;
+        }
+    }
+
+    .logoSection{
+        display: flex;
+        gap: 4px;
+        justify-content: start;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        img{width: 20px;
+            height: 20px;}
+    }
+   
+    .menu{
+        display: flex;
+        gap: 28px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.titleArea{
+    padding-top: 144px;
+    padding-left: 28px;
+    .title{
+        font-size: 7vw;
+        line-height: .8;
+        font-weight: 400;
+    }
+    .des{
+        padding-top: 8px;
+        font-size: 12px;
+        font: 400;
+        line-height: 15px;
+    }
+}
+
+
+// .downBtn {
+//     position: fixed;
+//     bottom: 16px;
+//     left: 50%;
+//     margin-left: -40px;
+//     .img{
+//         width: 80px;
+//     }
+// }
+
+// .imgContainer{
+//     margin-top: 40px;
+//     padding: 40px;
+   
+//     .imgWrapper{
+//         display: flex;
+//         width:100%;
+//         gap:24px;
+//        img{
+//         // 플렉스가 이상하게 안 먹을 때가 있어서 너비를 계산해서 갭의 반을 빼기
+//         width:calc(50% - 12px);
+//         height:200px;
+//         object-fit: cover;
+//        }
+    
+//     }
+// }
+
+section {
+    display: block;
+
+    .prItems {
+        margin-top: 120px;
+        padding-left: 28px;
+        padding-right: 28px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2vw;
+
+        .prItem {
+            position: relative;
+            width: 22.5vw;
+
+            .numWrap {
+                pointer-events: none;
+                position: absolute;
+                overflow: hidden;
+                width: 100%;
+                margin-left: 0.2vw;
+                transform: rotate(-90deg);
+                transform-origin: 100% 0;
+                text-align: right;
+                font-size: 0.8vw;
+                font-weight: 200;
+            }
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                object-fit: cover!important;
+                cursor: pointer;
+                transition: border-radius 0.5s ease-in-out;
+                &:hover{
+                    border-radius: 50%;
+                }
+            }
+
+            .line {
+                padding-top: 14px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+
+            .prInfo {
+                .prInfoDes {
+                    display: flex;
+                    justify-self: flex-start;
+                    margin-bottom: 0.5vw;
+                    padding-top: 0.8vw;
+
+                    .tagList {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex: 1 1;
+                        overflow: hidden;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    .date {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+                        overflow: hidden;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    .name {
+                        overflow: hidden;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+    }
+}
+
+.titleAbout{
+    padding-top: 160px;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 66px;
+    font-weight: 400;
+}
+
+.aboutWrap{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 24px;
+    .conceptDes{
+        // padding-right: 160px;
+        .conceptName{
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .conceptDes{
+            padding-top: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+
+.aboutDesWrap{
+    padding-right: 32px;
+    img{
+        width: 40px;
+        height: 8px;
+    }
+    display: block;
+    .aboutDes-1{
+        display: flex;
+        gap: 16px;
+        .Des-1{
+            .title{
+                padding-top: 4px;
+                font-size: 16px;
+                .title-2{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            .Des{
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .aboutDes-2{
+        display: flex;
+        padding-top: 80px;
+        gap:16px;
+        .Des-2{
+            .title{
+                padding-top: 4px;
+                font-size:16px;
+                .title-2{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            .Des{
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+        
+    }
+
+    .aboutDes-3{
+        display: flex;
+        padding-top: 80px;
+        gap:16px;
+        .Des-3{
+            .title{
+                padding-top: 4px;
+                font-size:16px;
+                font-weight: 700;
+                .title-2{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .Des{
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+        
+    }
+
+    .aboutDes-4{
+        display: flex;
+        padding-top: 80px;
+        gap:16px;
+        .Des-4{
+            .title{
+                padding-top: 4px;
+                font-size:16px;
+                font-weight: 700;
+                .title-2{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .Des{
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+        
+    }
+}
+
+
+.titleCareer{
+    padding-top: 160px;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 66px;
+    font-weight: 400;
+}
+
+
+.tableCareer{
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 24px;
+    padding-bottom: 120px;
+    .tableTitle{
+        border-bottom: 1px solid #ddd;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #7A7A7A;
+        .period{
+            width: 120px;
+        }
+        .company{
+            width: 120px;
+        }
+        .position{
+            width: 180px;
+        }
+        .info{
+            width: 552px;
+        }
+        .titleMore{
+            width: 51px;
+        }
+    }
+    .table-1{
+        border-bottom: 1px solid #ddd;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #2A2A2A;
+        .period{
+            width: 120px;
+        }
+        .company{
+            width: 120px;
+        }
+        .position{
+            width: 180px;
+        }
+        .info{
+            width: 552px;
+        }
+        .titleMore{
+            width: 51px;
+        }
+    }
+    .table-2{
+        border-bottom: 1px solid #ddd;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #2A2A2A;
+        .period{
+            width: 120px;
+        }
+        .company{
+            width: 120px;
+        }
+        .position{
+            width: 180px;
+        }
+        .info{
+            width: 552px;
+        }
+        .titleMore{
+            width: 51px;
+        }
+    }
+    .table-2-open{
+        .table2-body1{
+            padding-bottom: 24px;
+            padding
+        }
+    }
+    
+    .table-3{
+        border-bottom: 1px solid #ddd;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #2A2A2A;
+        .period{
+            width: 120px;
+        }
+        .company{
+            width: 120px;
+        }
+        .position{
+            width: 180px;
+        }
+        .info{
+            width: 552px;
+        }
+        .titleMore{
+            width: 51px;
+        }
+    }
+}

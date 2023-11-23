@@ -1,0 +1,385 @@
+body {
+  font-family: "Founders Grotesk", "Pretendard", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #2a2a2a;
+  background-color: #f5f5f5;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+}
+
+img, picture, svg {
+  display: inline-block;
+  -webkit-user-drag: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.header {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  z-index: 999;
+  border-bottom: 1px solid #ddd;
+}
+.header .inner {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 17px;
+}
+.header .progress-container {
+  bottom: -2px;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+.header .progress-container .progress-bar {
+  background-color: #2a2a2a;
+  height: 100%;
+}
+.header .logoSection {
+  display: flex;
+  gap: 4px;
+  justify-content: start;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header .logoSection img {
+  width: 20px;
+  height: 20px;
+}
+.header .menu {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.titleArea {
+  padding-top: 144px;
+  padding-left: 28px;
+}
+.titleArea .title {
+  font-size: 7vw;
+  line-height: 0.8;
+  font-weight: 400;
+}
+.titleArea .des {
+  padding-top: 8px;
+  font-size: 12px;
+  font: 400;
+  line-height: 15px;
+}
+
+section {
+  display: block;
+}
+section .prItems {
+  margin-top: 120px;
+  padding-left: 28px;
+  padding-right: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2vw;
+}
+section .prItems .prItem {
+  position: relative;
+  width: 22.5vw;
+}
+section .prItems .prItem .numWrap {
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0.2vw;
+  transform: rotate(-90deg);
+  transform-origin: 100% 0;
+  text-align: right;
+  font-size: 0.8vw;
+  font-weight: 200;
+}
+section .prItems .prItem img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  cursor: pointer;
+  transition: border-radius 0.5s ease-in-out;
+}
+section .prItems .prItem img:hover {
+  border-radius: 50%;
+}
+section .prItems .prItem .line {
+  padding-top: 14px;
+  border-bottom: 1px solid #2a2a2a;
+}
+section .prItems .prItem .prInfo .prInfoDes {
+  display: flex;
+  justify-self: flex-start;
+  margin-bottom: 0.5vw;
+  padding-top: 0.8vw;
+}
+section .prItems .prItem .prInfo .prInfoDes .tagList {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+}
+section .prItems .prItem .prInfo .prInfoDes .date {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+}
+section .prItems .prItem .prInfo .prInfoDes .name {
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.titleAbout {
+  padding-top: 160px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 66px;
+  font-weight: 400;
+}
+
+.aboutWrap {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 24px;
+}
+.aboutWrap .conceptDes .conceptName {
+  font-weight: 700;
+  font-size: 28px;
+}
+.aboutWrap .conceptDes .conceptDes {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.aboutDesWrap {
+  padding-right: 32px;
+  display: block;
+}
+.aboutDesWrap img {
+  width: 40px;
+  height: 8px;
+}
+.aboutDesWrap .aboutDes-1 {
+  display: flex;
+  gap: 16px;
+}
+.aboutDesWrap .aboutDes-1 .Des-1 .title {
+  padding-top: 4px;
+  font-size: 16px;
+}
+.aboutDesWrap .aboutDes-1 .Des-1 .title .title-2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.aboutDesWrap .aboutDes-1 .Des-1 .Des {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.aboutDesWrap .aboutDes-2 {
+  display: flex;
+  padding-top: 80px;
+  gap: 16px;
+}
+.aboutDesWrap .aboutDes-2 .Des-2 .title {
+  padding-top: 4px;
+  font-size: 16px;
+}
+.aboutDesWrap .aboutDes-2 .Des-2 .title .title-2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.aboutDesWrap .aboutDes-2 .Des-2 .Des {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.aboutDesWrap .aboutDes-3 {
+  display: flex;
+  padding-top: 80px;
+  gap: 16px;
+}
+.aboutDesWrap .aboutDes-3 .Des-3 .title {
+  padding-top: 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.aboutDesWrap .aboutDes-3 .Des-3 .title .title-2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.aboutDesWrap .aboutDes-3 .Des-3 .Des {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.aboutDesWrap .aboutDes-4 {
+  display: flex;
+  padding-top: 80px;
+  gap: 16px;
+}
+.aboutDesWrap .aboutDes-4 .Des-4 .title {
+  padding-top: 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.aboutDesWrap .aboutDes-4 .Des-4 .title .title-2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.aboutDesWrap .aboutDes-4 .Des-4 .Des {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.titleCareer {
+  padding-top: 160px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-size: 66px;
+  font-weight: 400;
+}
+
+.tableCareer {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 24px;
+  padding-bottom: 120px;
+}
+.tableCareer .tableTitle {
+  border-bottom: 1px solid #ddd;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #7A7A7A;
+}
+.tableCareer .tableTitle .period {
+  width: 120px;
+}
+.tableCareer .tableTitle .company {
+  width: 120px;
+}
+.tableCareer .tableTitle .position {
+  width: 180px;
+}
+.tableCareer .tableTitle .info {
+  width: 552px;
+}
+.tableCareer .tableTitle .titleMore {
+  width: 51px;
+}
+.tableCareer .table-1 {
+  border-bottom: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2A2A2A;
+}
+.tableCareer .table-1 .period {
+  width: 120px;
+}
+.tableCareer .table-1 .company {
+  width: 120px;
+}
+.tableCareer .table-1 .position {
+  width: 180px;
+}
+.tableCareer .table-1 .info {
+  width: 552px;
+}
+.tableCareer .table-1 .titleMore {
+  width: 51px;
+}
+.tableCareer .table-2 {
+  border-bottom: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2A2A2A;
+}
+.tableCareer .table-2 .period {
+  width: 120px;
+}
+.tableCareer .table-2 .company {
+  width: 120px;
+}
+.tableCareer .table-2 .position {
+  width: 180px;
+}
+.tableCareer .table-2 .info {
+  width: 552px;
+}
+.tableCareer .table-2 .titleMore {
+  width: 51px;
+}
+.tableCareer .table-2-open .table2-body1 {
+  padding-bottom: 24px;
+}
+.tableCareer .table-3 {
+  border-bottom: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2A2A2A;
+}
+.tableCareer .table-3 .period {
+  width: 120px;
+}
+.tableCareer .table-3 .company {
+  width: 120px;
+}
+.tableCareer .table-3 .position {
+  width: 180px;
+}
+.tableCareer .table-3 .info {
+  width: 552px;
+}
+.tableCareer .table-3 .titleMore {
+  width: 51px;
+}/*# sourceMappingURL=resume.css.map */

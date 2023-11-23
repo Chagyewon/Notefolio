@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 50px;
+  padding-left: 40px;
+  padding-top: 16px;
+  border-bottom: 1px solid black;
+  z-index: 9999;
+  box-sizing: border-box;
+  background: #FEFAF5;
+}
+.header .category {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 20px;
+}
+.header .logo {
+  position: absolute;
+  left: 50%;
+  top: 17px;
+  margin-left: -100px;
+}
+.header .logo img {
+  width: 200px;
+}
+.header .menu {
+  position: absolute;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 20px;
+  top: 16px;
+  right: 40px;
+}
+
+.pr_items {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+.pr_items .pr_item {
+  position: relative;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.pr_items .pr_item img {
+  width: 100%;
+}
+.pr_items .pr_item .pr_info {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}/*# sourceMappingURL=231019_실습.css.map */
